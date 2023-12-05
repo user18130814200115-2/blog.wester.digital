@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Generate index
 
 # Controls when the workflow will run
 on:
@@ -36,6 +36,6 @@ jobs:
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add latest_push.txt
-          git commit -m "Update latest push date" || true
+          git add docs/index.html
+          git commit -m "regenerate index" || true
           git push
