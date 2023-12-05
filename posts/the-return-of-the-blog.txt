@@ -1,0 +1,97 @@
+The return of the blog
+Tuesday December 5th 2023
+Meta content
+-------------------------
+
+Hi, it has been a while hasn't it?
+
+For the uninitiated: I used to run a regular html/css blog on my personal home
+server. This `server' was in fact just a raspberry pi stuffed in a shoebox which
+lived underneath my parents' ISP-provided modem/router. I always knew that this
+system would fail some day, and living more than one thousand kilometers away, I
+would have no way of fixing things. This happened way back in May of 2023. I
+fixed the issue on a visit this summer, only for the SD-card to break itself
+again not a month later. All this time, I have add the itch to write, but there
+were two problems: First, my server was fried, and second, my static site
+generator was on that sever.
+
+Yes you heard that right, I was a total [REDACTED] and kept the only version of
+my software on a device prone to breaking. I suffered and I learned. My old
+static site generator was an incredibly efficient Makefile, consisting of less
+than 50 lines of code. Despite its brevity, it handled: indexing, rss, styling,
+special pages, and more. Re-writing this system has been the main holdup for me
+in terms of writing.
+
+Now, I hear you thinking: `it was only 50 lines of code, it could not take more
+than an afternoon to reproduce'. This is entirely true, however there is one
+other little snag: my laptop gave up life. For the record: I know what is wrong,
+and I know how to fix it, but the process is rather too-involved for my current
+schedule. As such, I have been reduced to my mobile, and the ipad I
+historically only used for annotating pdf's, and dealing with modern society (in
+the form of banking apps, identification, loyalty cards, etcetera).
+
+As you may know: ipads are not exactly great for programming. Granted, there are
+some really impressive apps out there such as ish which emulates a full x86
+alpine environment, and a-shell which aims to bring a unix environment to the
+ipad (this is actually what I am writing this post on). These apps are
+incredibly impressive, and a-shell is the sole reason I can even afford to leave
+my laptop unimpaired for now. Nevertheless, the programmings-side-of-things is
+currently too clunky, making a re-write of the static site generator a much
+greater effort than it should be (For context, currently in a-shell, there is no
+way to loop over a file in it's port of dash...).
+
+All of this nasty weather comes with a massive silver lining though: not having
+access to my usual way of doing things has exposed me to many new systems which I
+wish to write about. That, and the fact that I have about one year worth of
+posts to catch up on should make for an interesting year.
+
+---------------------------------------------------------------------------------
+
+With all of that preamble out of the way, let's talk about the new blogging
+system. It is INCREDIBLY simple, and very scuffed, but I must say, I find it has
+a certain charm to it. Basically, I have a folder containing plaintext files.
+The first line is a title, the second the date, and the third the tags (though
+not even this is fixed, these three lines can contain whatever). These files are
+pushed to a GitHub repository where a small script is ran on them. I cannot
+stress enough: this script is SMALL. All it does is list the files in reverse
+chronological order, and grab the first three lines from each using unix head. I
+use some sed magic to get urls working in html, but that is it.
+
+    ls -rc posts/* | xargs head -n 3
+    # the rest is commentary
+
+I was inspired to do things this way largely from my explorations of
+gopherspace. For those who do not know: Gopher is a very simple internet
+protocol which was around before the modern web. It essentially serves plaintext
+files much like this one, and has some special syntax to deal with links and
+such things. Gopher has been largely phased out by the growth of the web, though
+-- as with all things --  a bunch of stubborn nerds refuse to let it go. In case
+it is not clear: those are terms of affects, and I am such a suborn nerd.
+
+I severely disliked gopher when I first learned of it. I saw no reason to
+distribute information over protocols which required specialized software to
+retrieve. That is not to say I liked the modern web mind you, but gopher (and
+gemmini for that matter) seemed like they would just require yet another
+application to exist on my system. This was especially frustrating because I
+read only one gopher phlog at the time, and I considered switching to a
+different application just for that a waste of time. I also hated that there
+were no RSS feeds (which I still consider the only saving grace for the modern
+web), thus separating these phlogs even more from my other content. (Just before
+anyone asks: yes I will eventually get rss working on this site as well, but
+writing is currently more important to me than programming).
+
+All of that is to say: things have changed, and I now spent a significant
+portion of my internet time on gopher. I became inspired by gopher phlogs
+such as hoi.st by Luxeferre, someone I know from my days working on KaiOS -- and
+gopher.black by James Tomasino, to create a very simple site so I could just
+focus on getting some of my writing out there again.
+
+I might mirror or migrate this blog to gopher some time in the future. It
+certainly seems a lot better suited for that space, but for now: I just want to
+write again, and this is the easiest way to do that. Thus we have this weird
+https-plaintext, I assure you that it is as confusing to me as it is to you.
+
+-------------------------------------------------------------------------------
+
+I will fill this blog with some actual content soon, now that it is up again, I
+expect I will be writing frequently, we have a lot to catch up on.
