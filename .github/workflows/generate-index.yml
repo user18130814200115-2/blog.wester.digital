@@ -28,10 +28,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Generate Index
         run: |
-          echo "<pre>Welcome, to the Wester.Digital plaintext blog, currently under construction. For now, check out these posts: "  > index.html
-          echo "" >> index.html
+          printf "<pre>Welcome, to the Wester.Digital plaintext blog, currently under construction. For now, check out these posts:\n"  > index.html
           ls -cr posts/* | xargs head -n 3 | sed -Ee 's/==> (.*) <==/<a href=\"\1\">=== \1 ===<\/a>/g' >> index.html
-          echo "It feels strange to not have my automatic footer here. So let me just say: if\nyou value my work, I encourage you to donate to a charity of your choosing, I personally like\nActionAid and MossyEarth (not a charity). Email me with questions, comments,\nor phlog recommendations at <blog@wester.digital></pre>" >> index.html
+          printf "\n\nIt feels strange to not have my automatic footer here. So let me just say: if\nyou value my work, I encourage you to donate to a charity of your choosing, I personally like\nActionAid and MossyEarth (not a charity). Email me with questions, comments,\nor phlog recommendations at <blog@wester.digital></pre>\n" >> index.html
 
       - name: Commit and Push Changes
         run: |
