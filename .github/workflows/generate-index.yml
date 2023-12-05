@@ -30,7 +30,7 @@ jobs:
         run: |
           echo "<pre>Welcome, to the Wester.Digital plaintext blog, currently under construction. For now, check out these posts: "  > index.html
           echo "" >> index.html
-          ls -cr posts/* | xargs head -n 3 | sed -Ee 's/==> (.*) <==/<a href=\"\1>=== \1 ===<\/a>/g' >> index.html
+          ls -cr posts/* | xargs head -n 3 | sed -Ee 's/==> (.*) <==/<a href=\"\1\">=== \1 ===<\/a>/g' >> index.html
           echo "</pre>" >> index.html
 
       - name: Commit and Push Changes
