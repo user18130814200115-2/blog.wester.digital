@@ -28,9 +28,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Generate Index
         run: |
-          cd posts
-          echo "Welcome, to the Wester.Digital plaintext blog, currently under construction. For now, check out these posts: "  > ../docs/index.html
-          ls -cr ./ | head -n 10 | xargs head -n 3 >> ../docs/index.html
+          echo "Welcome, to the Wester.Digital plaintext blog, currently under construction. For now, check out these posts: "  > ../index.html
+          ls -cr posts/* | head -n 10 | xargs head -n 3 >> ../index.html
 
       - name: Commit and Push Changes
         run: |
