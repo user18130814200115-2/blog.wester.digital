@@ -29,7 +29,7 @@ jobs:
       - name: Generate Index
         run: |
          cat header.html > index.html
-         ls -cr posts/* | xargs head -n 3 | sed -Ee 's/==> (.*) <==/<a href=\"\1\">==&gt; \1 &lt;==<\/a>/g' >> index.html
+         ls -cr posts/* | xargs head -n 3 | sed -Ee 's/==> (.*) <==/<a href=\"\1\">=== \1 ===<\/a>/g' >> index.html
          cat footer.html >> index.html
 
       - name: Commit and Push Changes
