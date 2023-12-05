@@ -29,7 +29,9 @@ jobs:
       - name: Generate Index
         run: |
           echo "<pre>Welcome, to the Wester.Digital plaintext blog, currently under construction. For now, check out these posts: "  > index.html
-          ls -cr posts/* | head -n 10 | xargs head -n 3 >> index.html
+          echo "" >> index.html
+          ls -cr posts/* | xargs head -n 3 | se
+d -Ee 's/==> (.*) <==/<a href=\"\1>=== \1 ===<\/a>/g' >> index.html
           echo "</pre>" >> index.html
 
       - name: Commit and Push Changes
