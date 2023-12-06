@@ -1,0 +1,223 @@
+Magic in fiction and real life
+Wednesday December 6th 2023 
+Fiction, Opinion
+==============================
+
+Magic is a large part of very form of fiction, and -- for me at least -- also a
+large part of getting enjoyment out of everyday life. `Magic'  in this case
+refers to a way of explaining certain phenomena in the world. Bad explanations
+go along the lines of: ``its magic, now be quiet''. The other end contains
+overly detailed explanations. Bordering on the edge of science, even if the
+science is fictional. When magic is well done in a work of fiction, it always
+fills me with the giddy sense of excitement. The explanations given dance just
+at the border of what I can understand, and this sets my imagination going like
+nothing else.
+
+So then, let us look at some examples of magical systems in popular fiction,
+explain why must of them are terrible at intriguing me, and follow all of this
+up with some real world magic.
+
+Harry Potter
+------------
+
+On of the most popular fictional works containing so-called magic is probably
+Harry Potter. Love it or hate it, the Harry Potter franchise has been extremely
+influential to fiction as a whole, and I can think of few people who have not
+read at least one of the books, or seen a single movie.
+
+That being said, the magic system in Harry Potter is terrible, truly amongst the
+worst, here is why: How does magic work in the Harry Potter universe? You say a
+spell, you flick a sick around, though sometimes you do not speak, and sometime
+you do not flick, oh and you need to be born a wizard, which is a largely random
+process. This system explains practically nothing, as most spell-based magical
+systems do. Harry Potter goes the extra mile in lack-of-explanation by not even
+explaining where the energy used to perform magics comes from.
+
+Let me first address spellcasting more generally. Spellcasting, in its most
+basic form is the utterance of a phrase. The main question that arises when you
+implement a system like this is: Why that phrase? What is it about that
+combination of sounds that causes the big magic to happen? Is someone or
+something listening? If not, why must the sounds be vocalized at all?
+Spellcasting can be implemented properly however, and the systems that do are
+often among the most satisfying, but Harry Potter is not one of them.
+
+Then there are wands and their movements. Magic, in Harry Potter, is seemingly
+an inherent trait you are born with, that much is explained to us. We know that
+wizards and witches can perform magic without a wand, though possession of a
+proper wand allows for the focussing of energy like a lens. This much I can
+accept, and I actually like about HP's system. I would still like to know where
+the energy comes from, but this is certainly a start.
+
+Thus wizards have or use energy through their wands, and making the right sounds
+either kills a guy, or makes him grow a bear. By not explaining the spells at
+all, there is very little room for the imagination to play. We know that
+mispronouncing the levitation spell can cause you to spontaneously combust, but
+there is not explanation as to why. Let us say we are speaking in a language
+where float and explode sound very similar, then we might have some room to
+fantasize. What if I used the hand motions of float, but instead I said boat,
+would that summon an aeroplane? That sort of thing.
+
+Avatar the last airbender
+-------------------------
+
+Let's look at a slightly better system: Avatar (the one with the tattooed monk,
+not the blue aliens). In Avatar, it is presupposed that every person has some
+sort of life force or energy flowing through them. Some people, called benders
+know how to shape this life force in order to manipulate the elements: water
+air, fire, and earth. This manipulation functions by moving one's body and the
+energy within it, and we can see this in action both in the comics and the
+television show. If a fire-bender moves their weight forward and thrusts an open
+palm forwards, they might generate a large cloud of fire, whereas the same
+movement with two outstretched fingers generates a finely concentrated stream of
+fire, or even lightning.
+
+This system works so well at its core because it uses fairly commonsensical
+concepts and combines them in a way you can grasp, even though it is still
+fictional. We know a thing or two about energy, we feel it when we become
+excited or angry, we feel its absence when we are tired. We also know a thing or
+two about manipulating the word through moving our limbs around. The fact that
+Avatar borrows from Chinese folklore and martial arts only aids in our
+understanding and the air of mystery surrounding it.
+
+You can start to fantasise about certain motions combined with certain elements.
+The story even encourages this as certain characters use the motions of
+water bending with the energy of fire bending. You can envision your own moves
+and variations, you can think of synergies and strategies, either borrowing from
+martial arts, or simply letting your imagination run loose.
+
+When it comes to explaining why only certain people can bend certain elements
+however, the magic falls apart for me. In essence, it has something to do with
+reincarnation and giant lion turtles who granted certain people the ability to
+bend at some time in their past lives. But if the system is all about learning
+to manipulate energy and moving your body, then why do we need to be imbued with
+this gift? To me, some of the magic is lost in this explanation, as it makes
+the whole bending idea much more otherworldly then it otherwise was.
+
+Unsong
+------
+
+Now, let us turn to one of my favourite implementations of magic in all of
+fiction: Unsong. In the world of Unsong, there are two forms of magic: names of
+God, and placebomancy. In order to explain both of these, some background is
+needed. The world of Unsong adheres to the biblical story of creation for the
+most part. However, after a war between the hosts of heaven and the hosts of
+hell, one angel: Uriel, decided to reprogram the world into the probabilistic
+system of atoms and forces we know today. Before this time, everything in
+existence was a direct expression of God's numerous faculties. After the
+restructuring of reality, history progresses as we know it, up until the space
+race. During one of the Apollo missions, humans attempt to orbit the moon and
+end up crashing into the crystal sphere that surrounds the earth. This sphere
+kept out the divine light and kept the world functioning probabilistically and
+all that.
+
+With the sphere cracked, a tiny amount to divine light is let back in. This
+means that everything in existence is now a little more an expression of God
+than it was before. Words previously just expressed things in existence, but now
+they also express God. The things in existence these words used to refer to also
+express God, and so there is not a connection between the thing and its
+expression, between the map and the territory. These two influence each other in
+both directions. Founding a town will cause it to be put on a map, but putting a
+town on a map may just as well cause people to settle there.
+
+In the world of Unsong, that certain phrases express God's faculties more
+clearly than others. These are the names of God, and they have various effects,
+such as making you bulletproof, walk on water, or become invisible. They do so
+by clearly expressing God's indestructible nature, His weightless, His
+obscurity, etcetera. A name of God is an expression of ultimate reality, and an
+expression of reality is no different from reality itself.  However, this is --
+by far -- the less interesting system of the two form of magic in Unsong.
+
+The second system is called placebomancy and it neatly encapsulates all forms of
+magic. Spells? got those, potions? got those, Avatar-esque bending? yes sir.  A
+placebomancer attempts to convince reality that a certain thing ought to happen.
+Placebomancers use the entire narrative for their acts, carrying a mystique,
+having mysterious backstories, and ensuring esoteric places to perform their
+rituals. The reason this works is that, since the sky cracked, reality is not as
+stable as it used to be, and if you can convince it somehow that what you are
+doing ought to make fire shoot from your fingers, then that is what will happen.
+The stories we tell each other are a part of reality, therefore: wearing a robe
+and waving a wand helps to convince reality that you are doing magic.
+
+What is great about this system is that it simply uses a facet of the
+fundamental functioning of Unsong's world: the way we express things is just as
+real as those things themselves. Furthermore, it is inherently limited, which
+explains nicely why everyone is not just placebomancing their way into paradise
+on earth. Sure you MIGHT be able to convince reality that the devil never
+existed, but the devil very strongly believes that he does, and so do many
+others. Then again, if you can find a convincing narrative, the world lies at
+your feet.
+
+Both of these systems are things you can grasp, but not quite fully comprehend,
+thus leaving space for your imagination to fill in the blanks. This is the real
+magic at play here. No words on a page can make magic to the same extent your
+own imagination can. Thus, let us finally move on to real magic.
+
+Magic in the real world
+-----------------------
+
+With real-word magic, I do not mean spells of ice and fire, nor ritual magic or
+elemental bending. I simply refer to those things which have a magical air about
+them. Things which we can understand just well enough for them to instill a
+childlike wonder in us and set our imaginations working. These things excite and
+intrigue us. Too-simple and they are not magical at all, too complicated, and it
+is science.
+
+Let's start with a personal example: audio cassettes. Audio cassettes work by
+putting air vibrations onto magnetic tape and retrieving them in the reverse
+manner. Now: I understand air vibrations, when listening to music (especially
+loud music) I can feel the speaker and the ground shake, I understand that this
+is the essence of sound. I also understand magnets. That is not to say that I
+necessarily grasp magnetic fields and such, but I know how magnets work, I have
+seen and felt them work. Expressing the vibrations of air linearly as thousands
+of little magnets on a tape, and spinning that tape to get the vibrations back
+is the essence of an audio cassette. The fact that we can do this is absolutely
+incredible to me, and, though I fully understand the parts, I still find it
+amazing that we can bend reality in this manner. In short, it is magical to me.
+
+Staying on the topic of audio: I do not find digital music players magical in
+the slightest. I simply do not grasp flash-storage, digital-to-analogue
+converters, and transistors well enough. These are all elements squarely in the
+realm of science. You would not try to explain them to a child, and with an adult
+you would use complex theories, and a lot a math. This is neither exciting nor
+intriguing. Sure it is impressive, but impressive and magical are two entirely
+different things.
+
+There are also systems which are too-simple to be magical. I find nothing
+magical about a classic gas-stove. Propane moves from the tank to the stove, it
+it seeps out slowly and constantly ignites itself. It is too-simple. Induction
+stoves on the other hand are too complicated. This also shows how subjective
+this magical feeling can be. To you, maybe a propane torch is magical, or maybe
+you grew up with so much magnetic field theory that induction stoves occupy the
+same space for you as cassette tapes do for me. 
+
+I honestly believe that keeping some of this magic in your life is a large part
+of being happy and curious about the world. These `magical' things are the first
+places where you can learn more. You can turn your basic grasp into full
+understanding, at which point new magics open up to you. If you had to start
+your journey into electronic by understanding  modern chip architecture, I am
+almost certain your search would never lead anywhere, it would simply be
+too-overwhelming. For me, magic can be found in audio cassettes, chemical
+photography, fermentation, pregnancies, seed germination, and so much more. For
+you the list might be different, but I think the effect is the same.  Fiction is
+one way of keeping magic in your life at least. And if it is done well, it can
+instill a sense of wonder for the world as a whole, not just for the fictional
+universe where the magic originated.
+
+-------------------------------------------------------------------------------
+
+I will close with one recommendation for a work of fiction, that being ``The
+name of the Wind'' by Patrick Rothfuss. It is the first book of a as-of-yet
+unfinished trilogy. And I enjoyed reading it very much. It has a great an
+innovative system of magic, which spiked my curiosity many time throughout the
+book, and the general storyline is very engaging. Above all though, it has been
+a while since a book managed to arouse my emotions so well. There were times I
+got so upset and angry at the main-character's actions that I had to put the
+book down for a few days to read a different novel. There were many many times
+where I had to stifle a fit of giggling in the library or on public transport.
+And I even smiled on occasion, which is not particularly something I am known to
+do. 
+
+If you have any questions or comments, feel free to send me an email at
+<blog@wester.digital>, I am especially interested in your thoughts about
+real-world-magic, as well as any book recommendations you might have, especially
+is they are works containing ~good~ magical systems.
