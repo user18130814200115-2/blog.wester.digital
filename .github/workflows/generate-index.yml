@@ -30,7 +30,7 @@ jobs:
         run: |
          cat header.html > index.html
          printf "<pre style=\"font-size: 2vw\">" > all.html
-         ls -ct posts/* | xargs head -n 3 | sed -Ee 's/==> (.*) <==/<a href=\"\1\">=== \1 ===<\/a>/g' | tee -a all.html | head -n 25 >> index.html
+         ls -r posts/* | xargs head -n 3 | sed -Ee 's/==> (.*) <==/<a href=\"\1\">=== \1 ===<\/a>/g' | tee -a all.html | head -n 25 >> index.html
          cat footer.html >> index.html
          printf "</pre>" >> all.html
 
