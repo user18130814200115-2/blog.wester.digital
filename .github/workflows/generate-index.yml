@@ -29,13 +29,15 @@ jobs:
       - name: Generate Index
         run: |
          cat header.html > index.html
-         ls -cr posts/* | xargs head -n 3 | sed -Ee 's/==> (.*) <==/<a href=\"\1\">=== \1 ===<\/a>/g' >> index.html
+         printf "<pre>" > all.html
+         ls -cr posts/* | xargs head -n 3 | sed -Ee 's/==> (.*) <==/<a href=\"\1\">=== \1 ===<\/a>/g' | tee -a all.html | head 25 >> index.html
          cat footer.html >> index.html
+         printf "</pre>" >> all.html
 
       - name: Commit and Push Changes
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add index.html
+          git add index.html all.html
           git commit -m "regenerate index" || true
           git push
