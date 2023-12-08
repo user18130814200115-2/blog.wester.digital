@@ -28,16 +28,12 @@ jobs:
       # Runs a single command using the runners shell
       - name: Generate Index
         run: |
-         cat header.html > index.html
-         printf "<pre style=\"font-size: 2vw\">" > all.html
-         ls -r posts/* | xargs head -n 3 | sed -Ee 's/==> (.*) <==/<a href=\"\1\">=== \1 ===<\/a>/g' | tee -a all.html | head -n 25 >> index.html
-         cat footer.html >> index.html
-         printf "</pre>" >> all.html
+            ./indexer.sh
 
       - name: Commit and Push Changes
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add index.html all.html
-          git commit -m "regenerate index" || true
+          git add index.html all.html feed.xml
+          git commit -m "regenerate indexes" || true
           git push
