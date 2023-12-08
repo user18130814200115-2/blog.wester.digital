@@ -26,5 +26,5 @@ generate_rss() {
     echo "</pre>]]></description></item></channel></rss>" >> feed.xml
 }
 
-generate_index
+generate_html
 generate_rss
