@@ -28,7 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Generate Index
         run: |
-            chmod +x indexer.sj
+            chmod +x indexer.sh
             ./indexer.sh
 
       - name: Commit and Push Changes
