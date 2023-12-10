@@ -1,13 +1,16 @@
 #!/bin/sh
 
 generate_html() {
-         cat header.html > index.html
          printf "<pre style=\"font-size: 2vw\">" > all.html
+         printf "<pre style=\"font-size: 2vw\">" > index.html
+         cat header.txt >> index.html
 
          ls -r posts/* | xargs head -n 3 | sed -Ee 's/==> (.*) <==/<a href=\"\1\">=== \1 ===<\/a>/g' | tee -a all.html | head -n 25 >> index.html
 
-         cat footer.html >> index.html
+         printf "=== <a href="all.html">Older Posts</a> ===" >> index.html
+         cat footer.txt >> index.html
          printf "</pre>" >> all.html
+         printf "<a href=\"mailto:blog@wester.digital\">&lt;blog@wester.digital&gt;</a></pre>" >> index.html
     
 }
 
