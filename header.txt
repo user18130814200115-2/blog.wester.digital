@@ -6,5 +6,5 @@ __      _____ ___| |_ ___ _ __     __| (_) __ _(_| |_ __ _| |
                                            |__/
   
 Welcome, to the Wester.Digital plaintext blog where I post poorly written
-content on whatever happens to currently intrest me. At the moment, this
-includes: technology, philosophy, acedemia, and life generally.
+content on whatever happens to currently interest me. At the moment, this
+includes: technology, philosophy, academia, and life generally.
