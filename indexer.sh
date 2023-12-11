@@ -4,6 +4,7 @@ generate_html() {
          printf "<pre style=\"font-size: 2vw\">" > all.html
          printf "<pre style=\"font-size: 2vw\">" > index.html
          cat header.txt >> index.html
+         printf "All content on this blog also avaiable in the form of an RSS feed at <a href=\"feed.xml\">feed.xml</a>.\n\n----------------------------------------------------------------------------\n\nRecent posts:" >> index.html
 
          ls -r posts/* | xargs head -n 3 | sed -Ee 's/==> (.*) <==/<a href=\"\1\">=== \1 ===<\/a>/g' | tee -a all.html | head -n 25 >> index.html
 
