@@ -31,12 +31,12 @@ generate_rss() {
 }
 
 generate_gophermap() {
-    cat header.txt | sed 's/^/i/g' > gophermap
-    printf "i\ni--------------------------------------------------------------------------------\ni\niRecent posts:\n" >> gophermap
+    cat header.txt > gophermap
+    printf "\n--------------------------------------------------------------------------------\n\nRecent posts:\n" >> gophermap
     head -n 1 posts/* | head -n 15 | tail -r | tr '\\n' ';' | sed -e 's/.==. /	/g' -e 's/ .==//g' -e 's/;;/;/g' |tr ';' '\\n' | sed -e 's/^[A-z]/0&/g' -e 's/^$/i/g' >> gophermap
     printf "1Old Posts	posts\n" >> gophermap
-    cat footer.txt | sed 's/^/i/g' >> gophermap
-    printf "i<blog@wester.digital>" >> gophermap
+    cat footer.txt >> gophermap
+    printf "<blog@wester.digital>" >> gophermap
 }
 
 generate_html
