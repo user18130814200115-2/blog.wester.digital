@@ -4,7 +4,7 @@ generate_html() {
          printf "<pre style=\"font-size: 2vw\">" > all.html
          printf "<pre style=\"font-size: 2vw\">" > index.html
          cat header.txt >> index.html
-         printf "All content on this blog also avaiable in the form of an RSS feed at\n<a href=\"feed.xml\">feed.xml</a>.\n\n----------------------------------------------------------------------\n\nRecent posts:\n" >> index.html
+         printf "All content on this blog also avaiable in the form of an RSS\nfeed at <a href=\"feed.xml\">feed.xml</a>.\n\n-----------------------------------------------------------------\n\nRecent posts:\n" >> index.html
 
          ls -r posts/* | xargs head -n 3 | sed -Ee 's/==> (.*) <==/<a href=\"\1\">=== \1 ===<\/a>/g' | tee -a all.html | head -n 25 >> index.html
 
@@ -32,7 +32,7 @@ generate_rss() {
 
 generate_gophermap() {
     cat header.txt > gophermap
-    printf "\n----------------------------------------------------------------------\n\nRecent posts:\n" >> gophermap
+    printf "\n-----------------------------------------------------------------\n\nRecent posts:\n" >> gophermap
     head -n 1 posts/* | head -n 15 | tac | tr '\n' ';' | sed -e 's/.==. /	/g' -e 's/ .==//g' -e 's/;;/;/g' |tr ';' '\n' | sed -e 's/^[A-z]/0&/g' >> gophermap
     printf "1All Posts	posts\n" >> gophermap
     cat footer.txt >> gophermap
