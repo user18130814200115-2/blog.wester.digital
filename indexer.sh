@@ -32,7 +32,7 @@ generate_rss() {
 
 generate_gophermap() {
     cat header.txt > gophermap
-    printf "\n-----------------------------------------------------------------\n\nRecent posts:\n" >> gophermap
+    printf "\nhWorld Wide Web version of this phlog	https://blog.wester.digital\n-----------------------------------------------------------------\n\nRecent posts:\n" >> gophermap
     head -n 1 posts/* | head -n 15 | tac | tr '\n' ';' | sed -e 's/.==. /	/g' -e 's/ .==//g' -e 's/;;/;/g' |tr ';' '\n' | sed -e 's/^[A-z]/0&/g' >> gophermap
     printf "1All Posts	posts\n" >> gophermap
     cat footer.txt >> gophermap
