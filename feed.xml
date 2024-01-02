@@ -789,4 +789,145 @@ unique way of influencing the world at large, but this is not the
 way to do it.  Instead, liberal authors are cementing people in
 their beliefs, thus quite literally breeding conservative
 sentiment. 
+
+</pre>]]></description></item><item><link>https://blog.wester.digital/posts/0005-housekeeping-fire-and-python.txt</link><title>
+Housekeeping, Fire, and Python
+</title><pubDate>Tue, 2 Jan 2024</pubDate><description><![CDATA[<pre>
+Lifestyle, Technology
+==============================
+
+For the past week or so, I have had a quite delightful morning
+routine. Well I say routine, there is one particular item which
+starts my day, and that is building a fire. I am currently
+staying in Northern Italy, which is by no means as cold as my
+home town (at the time of writing, there is a 15 degree
+temperature difference, and the weekend there will reach around
+-20 Celsius compared to +8 here), but it is nevertheless cold
+enough to warrant heating the house. And in this particular
+house, this is done trough two wood stoves.
+
+As such, every morning starts with cleaning out the ashes,
+brushing the hearth and wiping the glass. Afterwards, I head out
+into the back yard to gather some firewood from our stores. I
+have to pick a mix of sizes and types of wood: flash tinder,
+kindling, smaller sticks, branches, and logs. The fist to get the
+fire going, and the latter to keep it going without intervention
+every few minutes. At this point, I start constructing the fire,
+open up the vents for strong airflow and wait for some small
+flames to form. By the time the branches are on, coffee will be
+ready and the living room will slowly start heating up.
+
+If all of this sounds incredibly tedious to you, well... in a
+sense you would be correct. Building a fire like this is rather
+more time-consuming on a day-to-day basis than a central heading
+system using radiators, or a heat-pump-system for that matter.
+Keeping the fire going also requires getting more wood from the
+stores and stacking it on every two hours or so. However, both
+building and marinating the fire are delightfully simple tasks,
+perfect to get my body moving in the morning and keep my brain
+snoozing for a little while. After the cleaning, I rouse my brain
+and start what is essentially a process of creative problem
+solving.  Every day, the kindling is different, the airflow, heat
+of the stove, humidity of the tinder; there are simply too many
+variables to keep in mind. So: You just light your kindling and
+see if you can get and ember to turn into a flame. If something
+is not working: check the airflow, maybe the chimney, and more
+likely: the wood. 
+
+A central heating system (which heats my apartment in the
+freezing North) does not require such creative problem solving.
+But what if the system breaks? Well, at that point the complexity
+of the problem is likely so high that I cannot fix it on my own.
+Calling a mechanic is essentially my only refuge, and this
+becomes a tedious task, rather than a menial but enjoyable one as
+with building the fire and maintaining the stove.
+
+After I realized this link between simple systems and the joy I
+have in using them, I started seeing these matters all around the
+house. The dishwasher? Tedious, especially when it breaks. There
+is a certain method to stacking the plates and bowls to ensure
+maximum cleaning, which is somewhat enjoyable at the best of
+times, but on the average day, it is just annoyingly
+time-consuming and inefficient on space. Washing dishes by hand
+in comparison is a largely mindless endeavour, but one I find
+myself enjoying more than loading-, unloading-, and maintaining-
+the dishwasher.
+
+Nothing frustrates me quite as mush as a cold shower (when I want
+a warm one), or a clogged drain while I am already in the shower.
+On the other hand, in those cases where I have had to wash myself
+using a bucket of water, the process has been enjoyable in much
+the same way. A sort of rustic monotony where all problems are
+ones I can solve in the moment without any particular skills.
+Even those times where my bucket was filled with ice-cold water,
+placed outside, in -15 degree weather, the process was more
+enjoyable than those times that my shower refused to go those two
+degrees higher to where I wanted it.
+
+-----------------------------------------------------------------
+
+At this point, I want to draw this idea of rustic monotony to
+another endeavour of mine, that being programming. I have been
+taking part in Advent Of Code 2023. For the uninitiated: Advent
+of Code is a typical advent calender for the month of December
+where each day introduces a new programming challenge which you
+can solve using whatever methods you please. I joined in midway
+through December, and as such am just on day 17 right now, though
+I do not think I will finish the entire calendar.
+
+You see, the early challenges in this calendar were rather
+simple. I solved them using my usual tools (mostly sed actually)
+and it was an enjoyable 15-30 minute practice to give my brain
+something to chew on during winter break. As the days continued
+however, the problems became more complex. Fairly quickly, the
+performance and instability of shell scripts on my machine got in
+the way of the programming. These shortcomings of the dash port
+on my iPad are not problems I can solve, only ones I can work
+around. Alternatively I can call a mechanic (send a GitHub issue
+about my problem) and wait probably several month for it to be
+fixed (if at all). Instead I switched to Python. At this point, I
+was no longer solving little problems, I was writing full
+programs. The days continued, and now I am here implementing full
+scale algorithms such as Dijkstra's, and troubleshooting each
+program for up to a full hour. For some of the problems, if my
+initial code did not work, I has literally no clue where to start
+fixing the problem (or even diagnosing it for that matter).  It
+usually involves writing a lot of code to get more verbose
+output, slowing down that output to something manageable, and
+then squinting and making minor adjustments for up to one hour.
+What started as a 15-30 minute brain-teaser became a time sink
+several hours deep. Most frustrating where there problems where I
+got a working solution, only to be asked in part two, to run
+those calculations 1 000 000 times, a task the efficiency of my
+code was in no state to do.
+
+I don't find fixing problems like this fun, it is a frustrating
+and time-consuming task. The same goes for optimizing code.
+Whereas those first few days were building a fire, adding simple
+steps together one at the time, ended with me building a central
+heating system, drawing blueprints, researching algorithms,
+optimizing piping, and a lot of headaches.
+
+-----------------------------------------------------------------
+
+I will be trying to make a greater effort to include rustically
+enjoyable things in my life, and I will be trying to replace as
+many painfully complex systems with human-sized ones. This likely
+won't be easy and even making such transitions will be
+time-consuming and difficult (watch out for a future post titled
+"Make and effort to make it effortless"), but I think such
+transitions are worth it. Thinking back, this is the reason I
+originally became interested in the command line interfaces, old
+flip phones and feature phones.
+
+This blog is in essence also a rustic-refuge. Writing post on
+here is dreadfully simple. And while my site-builder script is
+more complex than I would like (it was extended to deal with rss
+and gopher aside from html, accounting for the extra size), the
+writing of that script is now behind me. And I can focus on
+writing in plaintext, wrapped to 65 columns and decorating it
+with ASCII art and white space. Just what I need on an otherwise
+uneventful evening where my only task is to keep the fire going
+and the house heated.
+
 </pre>]]></description></item></channel></rss>
