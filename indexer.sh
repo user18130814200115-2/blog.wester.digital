@@ -46,7 +46,7 @@ generate_html_v2() {
 }
 generate_rss_v2() {
     grep -B 9999 '^AUTOGEN$' prefabs/rss | grep -v "^AUTOGEN$"
-    head -n 9999 posts/* #| sed -e 's/>/\&amp;gt;/g' -e 's/</\&amp;lt;/g' -e 's/^==.amp.gt. (.*) .amp.lt.==$/<\/pre>]]><\/description><\/item><item><link>https:\/\/blog.wester.digital\/\1<\/link><title>/g' -e 's/([A-z].., [0-9]* [A-z].. [0-9]...)/<\/title><pubDate>\1<\/pubDate><description><![CDATA[<pre>/g'
+    head -n 9999 posts/* | sed -e 's/>/\&amp;gt;/g' -e 's/</\&amp;lt;/g' -e 's/^==.amp.gt. (.*) .amp.lt.==$/<\/pre>]]><\/description><\/item><item><link>https:\/\/blog.wester.digital\/\1<\/link><title>/g' -e 's/([A-z].., [0-9]* [A-z].. [0-9]...)/<\/title><pubDate>\1<\/pubDate><description><![CDATA[<pre>/g'
     grep -A 9999 '^AUTOGEN$' prefabs/rss | grep -v "^AUTOGEN$"
 }
 generate_gophermap_v2() {
