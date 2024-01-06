@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+<title>Wester Digital plaintext blog</title>
+<link>https://blog.wester.digital</link>
+<description>Random blogposts delivered in plaintext</description>
+<item><title>Problems with the RSS feed?</title><description><![CDATA[<pre>Send me an email at <a href="mailto:blog@wester.digital">blog@wester.digital</a> or make an issue on <a href="https://github.com/user18130814200115-2/plain.wester.digital">GitHub</a> with the problem you encountered and I will try to resolve it.
+AUTOGEN
+</pre>]]></description></item></channel></rss>
