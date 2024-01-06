@@ -2,12 +2,13 @@
 <rss version="2.0">
 
 <channel>
-  <title>Wester Digital plaintext blog</title>
-  <link>https://blog.wester.digital</link>
-  <description>Random blogposts delivered in plaintext</description><item><title>Problems with the RSS feed?</title><description><![CDATA[<pre>Send me an email at <a href="mailto:rss@wester.digital">rss@wester.digital</a> or make an issue on <a href="https://github.com/user18130814200115-2/plain.wester.digital">GitHub</a> with the problem you encountered and I will try to resolve it.
-</pre>]]></description></item><item><link>https://blog.wester.digital/posts/0001-the-return-of-the-blog.txt</link><title>
+<title>Wester Digital plaintext blog</title>
+<link>https://blog.wester.digital</link>
+<description>Random blogposts delivered in plaintext</description>
+<item><title>Problems with the RSS feed?</title><description><![CDATA[<pre>Send me an email at <a href="mailto:blog@wester.digital">blog@wester.digital</a> or make an issue on <a href="https://github.com/user18130814200115-2/plain.wester.digital">GitHub</a> with the problem you encountered and I will try to resolve it.
+==> posts/0001-the-return-of-the-blog.txt <==
 The return of the blog
-</title><pubDate>Tue, 5 Dec 2023</pubDate><description><![CDATA[<pre>
+Tue, 5 Dec 2023
 Meta content
 ======================
 
@@ -122,9 +123,9 @@ I will fill this blog with some actual content soon, now that it
 is up again, I expect I will be writing frequently, we have a lot
 to catch up on.
 
-</pre>]]></description></item><item><link>https://blog.wester.digital/posts/0002-my-current-tech-setup.txt</link><title>
+==> posts/0002-my-current-tech-setup.txt <==
 My current tech setup
-</title><pubDate>Wed, 6 Dec 2023</pubDate><description><![CDATA[<pre>
+Wed, 6 Dec 2023
 Technology, Travel
 =====================
 
@@ -337,13 +338,13 @@ impact on environmental concerns, but that day is not today.
 
 If you have any questions or comments regarding my old-or-new
 setup, please send me an email. The address is
-&amp;lt;blog@wester.digital&amp;gt;. I would be especially interested in
+<blog@wester.digital>. I would be especially interested in
 hearing your thoughts on breathing new life into my old devices,
 especially the unstable android tablet, and the old Nokias.
 
-</pre>]]></description></item><item><link>https://blog.wester.digital/posts/0003-magic.txt</link><title>
+==> posts/0003-magic.txt <==
 Magic in fiction and real life
-</title><pubDate>Wed, 6 Dec 2023</pubDate><description><![CDATA[<pre>
+Wed, 6 Dec 2023
 Fiction, Opinion
 ==============================
 
@@ -601,14 +602,14 @@ public transport.  And I even smiled on occasion, which is not
 particularly something I am known to do. 
 
 If you have any questions or comments, feel free to send me an
-email at &amp;lt;blog@wester.digital&amp;gt;, I am especially interested in
+email at <blog@wester.digital>, I am especially interested in
 your thoughts about real-world-magic, as well as any book
 recommendations you might have, especially is they are works
 containing ~good~ magical systems.
 
-</pre>]]></description></item><item><link>https://blog.wester.digital/posts/0004-lecuring-politics-in-ficiton.txt</link><title>
+==> posts/0004-lecuring-politics-in-ficiton.txt <==
 Lecturing politics in fiction
-</title><pubDate>Sun, 10 Dec 2023</pubDate><description><![CDATA[<pre>
+Sun, 10 Dec 2023
 Fiction, Opinion
 =============================
 
@@ -790,9 +791,9 @@ way to do it.  Instead, liberal authors are cementing people in
 their beliefs, thus quite literally breeding conservative
 sentiment. 
 
-</pre>]]></description></item><item><link>https://blog.wester.digital/posts/0005-housekeeping-fire-and-python.txt</link><title>
+==> posts/0005-housekeeping-fire-and-python.txt <==
 Housekeeping, Fire, and Python
-</title><pubDate>Tue, 2 Jan 2024</pubDate><description><![CDATA[<pre>
+Tue, 2 Jan 2024
 Lifestyle, Technology
 ==============================
 
