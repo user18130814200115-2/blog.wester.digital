@@ -52,7 +52,7 @@ generate_rss_v2() {
 generate_gophermap_v2() {
     grep -B 9999 '^AUTOGEN$' prefabs/gopher | grep -v "^AUTOGEN$"
     #head -n 1 posts/* | head -n 15 | tac | tr '\n' ';' | sed -e 's/.==. /	/g' -e 's/ .==//g' -e 's/;;/;/g' |tr ';' '\n' | sed -e 's/^[A-z]/0&/g'
-    ls -r posts/* | xargs head -n 3 | sed -Ee 's/==> (.*) <==/0\1	=== \1 ===/g' | head -n 25
+    ls -r posts/* | xargs head -n 3 | sed -Ee 's/==> (.*) <==/0=== \1 ===	\1/g' | head -n 25
     grep -A 9999 '^AUTOGEN$' prefabs/gopher | grep -v "^AUTOGEN$"
 }
 
