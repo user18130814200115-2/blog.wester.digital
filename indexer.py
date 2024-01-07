@@ -88,7 +88,7 @@ for file in sorted(os.listdir("posts"), reverse=True):
         gopher_gen += '0=== ' + post_content[0][:-1] + ' ===\tposts/' + file + '\n' + ''.join(post_content[1:3]) + '\n'
         max_posts_in_index -= 1
 
-    rss_gen += '<item><link>https://blog.wester.digital/posts/' + file + '</link><title>' + post_content[0][:-1] + '</title><pubDate>' + post_content[1][:-1] + '</pubDate><description><![CDATA[<pre>' + ''.join(post_content[2:]).replace('>', '&amp;gt;').replace('<', '&amp;lt;') + '</pre>]]></description></item>'
+    rss_gen += '<item><link>https://blog.wester.digital/posts/' + file + '</link><title>' + post_content[0][:-1] + '</title><pubDate>' + post_content[1][:-1] + '</pubDate><description><![CDATA[<pre>' + ''.join(post_content).replace('>', '&amp;gt;').replace('<', '&amp;lt;') + '</pre>]]></description></item>'
 
 
 # Generate the full pages
