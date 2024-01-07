@@ -23,7 +23,7 @@ rss:
 '''
 
 # To this the email address gets appended formatted in the manner required for the format
-footer = '''
+footer = '''\
 It feels strange to not have my automatic footer here. So let me
 just say: if you value my work, I encourage you to donate to a
 charity of your choosing, I personally like ActionAid and
