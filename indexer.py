@@ -1,4 +1,4 @@
-#!/usr/env/python
+#!/usr/bin/env python3
 
 title = '''\
                   _                   _ _       _ _        _
@@ -115,4 +115,3 @@ file.close()
 file = open("feed.xml", "w")
 file.write(rss)
 file.close()
-
