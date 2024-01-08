@@ -10,10 +10,10 @@ __      _____ ___| |_ ___ _ __     __| (_) __ _(_| |_ __ _| |
 '''
 
 welcome_message = '''
-Welcome, to the Wester.Digita, now in plaintext. Here I post
-poorly written content on whatever happens to currently interest
-me. At the moment, this includes: technology, philosophy,
-academia, and life generally.
+Welcome, to Wester.Digital, now in plaintext. Here I post poorly
+written content on whatever happens to currently interest me. At
+the moment, this includes: technology, philosophy, academia, and
+life generally.
 '''
 
 # To this, the relevant links get appended for the platform we are on
