@@ -1,0 +1,142 @@
+Switching to Python
+Mon, 08 Jan 2024
+Technology, Opinion
+===================
+
+For the longest time (really since I started getting remotely
+serious about writing my own software, my language of choice has
+been POSIX shell. The shell is the environment through which one
+interacts with a unix-like operating system, and shell-script are
+simply combinations of interactions which combine to achieve
+pretty monumental things.
+
+I always knew that shell scripting had its limitations. Though it
+was mostly fine for my purposes. After some recent issues with
+the shell however, I have switched away from it. My scripting
+language of preference is now python, though the transition is
+strange, as the two languages are designed for entirely different
+purposes. This post will detail the reasons I switched away from
+shell as well as the difficulties I have had switching to python.
+
+-----------------------------------------------------------------
+
+The primary reason I moved away from shell scripting now, as
+opposed to earlier is that I cannot reliably run shell scripts on
+my current system. As I have mentioned in several previous posts
+now, my main computer interface is currently an iPad app called
+a-shell. a-shell uses dash for its shell processing, though the
+port is extremely buggy and lacking in some fairly basic
+features[1]. This is what finally propelled me away from shell
+scripting, but there were many problems I was already
+encountering beforehand, so let's explore these too.
+
+1. Standardisation
+==================
+
+POSIX is a set of standards for various pieces of software which
+includes standards of how a POSIX-compliant shell should operate.
+One major problem with these standards is that they are poorly
+adhered to. The GNU project is particularly guilty of this, in
+that it extends POSIX software with many non-POSIX features.
+While these features are sometimes great, I cannot properly make
+use of them because I do not know if a system I am targeting is
+using the GNU-extended utilities or the base-POSIX ones.
+
+This opens up to a wider point that I cannot write a shell script
+and expect it to perform reliably on any given system. Minor
+differences in the way a shell is implemented can cause an entire
+script to fail or output wrong data. I actually had this problem
+recently, where my shell wanted newline characters to be written
+as follows '\\n' whereas the system I was targeting wanted '\n'.
+This meant I could not test the software locally before pushing
+it to the production server, which was of course highly
+frustrating and time-consuming. A more common case is the use of
+`echo`. Echo has various switches in various shell
+implementations. Sometimes echo will interpret escape sequences,
+sometimes it will just print them literally, sometimes the -n
+switch makes it so echo does not terminate in a newline,
+sometimes it just prints the string '-n'. Echo is virtually
+unusable in shell scripting targeting multiple systems for this
+exact reason and printf is often recommended instead.
+
+2. Intended use
+===============
+
+Why does echo work in such varying ways? Well because the shell
+was never intended for programming. It was intended for
+interacting with your system. This is also why bare-POSIX shells
+lack the functionality real programming languages have. At its
+core, the shell is meant to interact with other programs on the
+system, such as sed, grep, awk, cat, etcetera. GNU's bash shell
+makes an effort to push the shell closer towards being a proper
+programming language by adding things like reading files and
+processing substring directly in the shell without needing to
+rely on cat and cut respectively.
+
+3. External programs
+====================
+
+What about these programs the shell is meant to interact with
+then? The way I see it, they are the greatest blessing and curse
+of shell scripting. Basically, it is incredibly easy to call
+upon a program installed on the system and equally easy to make
+it interact with other programs. However, if you are targeting
+multiple systems, you do not know exactly which programs are
+installed, and which versions. Here we once again encounter the
+problem of GNU-extended software and undefined behaviour.
+
+Furthermore, because the shell can basically only do basic string
+manipulations, your programs will likely heavily rely on calling
+external programs (especially the core utilities) to achieve
+anything noteworthy. Your shell script will act more as glue to
+hold the various 'real' programs together. With this being the
+case however, if there is no program to perform the task you
+need, you are basically out of luck. This once again goes to
+show, that shell is not (and does not intoned to be) a
+programming language.
+
+-----------------------------------------------------------------
+
+If these problems were already always present in the shell
+however, then why did I choose to use it regardless? Well the
+answer is simple: I needed a lot of glue. I often found myself in
+situations where I had data of one format (usually given by a
+program) and I needed that same data in a different format for
+use in another program or for my own consumption. This is exactly
+what shell script excel at. I would still use shell script for
+this purpose if the dash port on a-shell was more stable.
+
+Now I am using python for translating data in this manner, but
+this is often much more complicated. Getting input data from a
+command is doable in python, but nowhere near as easy as it is in
+shell scripts (where you literally JUST write the command you
+want the output from). Outputting data is also more difficult. In
+shell, one can use pipes or redirects to pass data to a command
+or file respectively, in python, there are several steps involved
+in either of these processes, in addition to the need of
+libraries. 
+
+-----------------------------------------------------------------
+
+The static site generator for this blog is now a little python
+script rather than a shell script. Honestly the shell script
+started out incredibly simple, relying really only on the
+standard utility `head`. Things quickly grew complicated though,
+with me using several dozen regex strings in sed to get both
+html, gopher, and rss output working. While version 0.1 of my
+site builder was mush more simple in shell, the monster it grew
+into was much easier to understand in python, where it was also
+more flexible. As such, translating the script to python allowed
+me to make some quality of life changes, and it will also make
+future development easier.
+
+Most importantly though. The python implementation is stable, and
+works in exactly the same way on any system running the same
+version. If you wish to see my current implementation, it is
+available on my GitHub page at
+user18130814200115-2/plain.wester.digital.
+
+[1] I do not, by any means, mean to accuse the author of a-shell
+of doing a bad job. A shell is an incredibly complex piece of
+software, and the fact that the shell works even this well is
+nothing short of impressive.
