@@ -10,10 +10,10 @@ __      _____ ___| |_ ___ _ __     __| (_) __ _(_| |_ __ _| |
 '''
 
 welcome_message = '''
-Welcome, to the Wester.Digital plaintext blog where I post poorly
-written content on whatever happens to currently interest me. At
-the moment, this includes: technology, philosophy, academia, and
-life generally.
+Welcome, to the Wester.Digita, now in plaintext. Here I post
+poorly written content on whatever happens to currently interest
+me. At the moment, this includes: technology, philosophy,
+academia, and life generally.
 '''
 
 # To this, the relevant links get appended for the platform we are on
@@ -24,10 +24,12 @@ rss:
 
 # To this the email address gets appended formatted in the manner required for the format
 footer = '''\
-It feels strange to not have my automatic footer here. So let me
-just say: if you value my work, I encourage you to donate to a
-charity of your choosing, I personally like ActionAid and
-MossyEarth (not a charity).
+All of my writings are available free of charge and I do not
+accept monetary donations. If you are feeling charitable, I
+encourage you to donate to a charitable organisation or
+non-profit either with your money, time, voice, or other form of
+support or to simply help out a someone in need in whatever form
+that may take.
 
 Email your questions, comments, or recommendations to
 '''
