@@ -18,8 +18,7 @@ life generally.
 
 # To this, the relevant links get appended for the platform we are on
 alternatives = '''
-All of my writings are available as through the web, gopher and
-rss:
+All of my writings are available through the web, gopher and rss:
 '''
 
 # To this the email address gets appended formatted in the manner required for the format
