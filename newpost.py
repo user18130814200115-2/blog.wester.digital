@@ -11,7 +11,7 @@ filename = 'posts/' + index + '-' + '-'.join(sys.argv[1:]).lower() + '.txt'
 title = ' '.join(sys.argv[1:])
 date = time.strftime("%a, %d %b %Y")
 tags = ''
-rule = max(len(title), len(time)) * '='
+rule = max(len(title), len(date)) * '='
 
 #file = open(filename, "w")
 #file.write(title + '\n' + date + '\n' + tags + '\n' + rule)
