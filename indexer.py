@@ -96,7 +96,7 @@ for file in sorted(os.listdir("posts"), reverse=True):
 
     if max_posts_in_index > 0:
         html_gen += current_html
-        gopher_gen += item_type + '=== ' + post_content[0][:-1] + ' ===\t' + location + '\n' + ''.join(post_content[1:3]) + '\n'
+        gopher_gen += str(item_type) + '=== ' + post_content[0][:-1] + ' ===\t' + location + '\n' + ''.join(post_content[1:3]) + '\n'
         max_posts_in_index -= 1
 
     rss_gen += '<item><link>https://blog.wester.digital/' + location + '</link><title>' + post_content[0][:-1] + '</title><pubDate>' + post_content[1][:-1] + '</pubDate><description><![CDATA[<pre>' + ''.join(post_content).replace('>', '&amp;gt;').replace('<', '&amp;lt;') + '</pre>]]></description></item>'
