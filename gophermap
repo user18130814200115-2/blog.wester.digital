@@ -17,6 +17,10 @@ h=== World Wide Web page ===	URL:https://blog.wester.digital
 -----------------------------------------------------------------
 
 Recent posts:
+0=== Moving to NixOS ===	posts/0027-moving-to-nixos.txt
+Tue, 24 Dec 2024
+Highly technical, Linux, Opinion
+
 0=== Descartes the Kabbalist ===	posts/0026-descartes-the-kabbalist.txt
 Wed, 30 Oct 2024
 Philosophy, Religion, Non-serious
@@ -32,10 +36,6 @@ Opinion
 0=== Project Typewriter 2.0 ===	posts/0023-project-typewriter-2-0.txt
 Wed, 10 Jul 2024
 Technology, Programming
-
-0=== Oslo's public transport is unfriendly to foreigners ===	posts/0022-oslos-public-transport-is-unfriendly-to-forgeiners.txt
-Sun, 07 Jul 2024
-Travel, Opinion
 
 1All posts	posts
 
