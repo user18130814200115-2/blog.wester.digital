@@ -191,26 +191,26 @@ using it for quite some time.
 -----------------------------------------------------------------
 [1]: As a quick aside, I think the classic Arch-user-forum
      response `RTFM' (Read the F Manual), is harmful to the
-	 community as a whole, though I cannot deny that most of the
-	 questions raised by new uses are described extensively on
-	 the excellent wiki pages.
+     community as a whole, though I cannot deny that most of the
+     questions raised by new uses are described extensively on
+     the excellent wiki pages.
 [2]: As of writing, the mesa package has still not been updated
      and the version conflict persists. It has been about a
-	 week.
+     week.
 [3]: This is 100% a case of user-error, and not a problem with
      Nix or NixOS.
 [4]: I recall when I first installed Arch constantly messing
      things up and re-installing from scratch. Even on Alpine I
-	 once managed to remove any means of connecting to wifi and
-	 needing to re-install.
+     once managed to remove any means of connecting to wifi and
+     needing to re-install.
 [5]: I can't even blame nix for this. The program in question is
      a niche add-on to a niche program which has not been updated
-	 in over a year. The only reason this program is in the
-	 Alpine repositories is because I added it there.
+     in over a year. The only reason this program is in the
+     Alpine repositories is because I added it there.
 [6]: I don't know exactly what it means for a typeface
      to be `unstable', but I believe it has something to do with
-	 the fact that droid is designed for small-screen-interfaces which
-	 are currently under heavy development.
+     the fact that droid is designed for small-screen-interfaces which
+     are currently under heavy development.
 [7]: https://github.com/user18130814200115-2/riverbed
 </pre>]]></description></item><item><link>https://blog.wester.digital/posts/0026-descartes-the-kabbalist.txt</link><title>Descartes the Kabbalist</title><pubDate>Wed, 30 Oct 2024</pubDate><description><![CDATA[<pre>Descartes the Kabbalist
 Wed, 30 Oct 2024
