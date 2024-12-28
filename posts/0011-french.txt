@@ -117,3 +117,15 @@ left, but given that its main focus currently seems to be
 `modernizing' -- id est: giving 4 year olds personal laptops
 and/or tablets, so they can stay glued to a screen even at school
 -- I am not expecting much.
+
+=================================================================
+
+All of my writing and software projects are available free of
+charge under CC-BY unless stated otherwise. I do not accept
+monetary donations, but if my work has brought you value I ask
+you to donate to a charitable cause or high-impact fund,
+organisation, business, institute, or individual driving moral
+progress.
+
+For more information about making a moral impact, see search for
+``giving what we can'', ``give well'', or ``effective altruism''.

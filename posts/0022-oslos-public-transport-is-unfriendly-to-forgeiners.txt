@@ -137,3 +137,15 @@ should be concerned with matters of accessibility in public
 transport, and while I by no means believe Norway to be the worst
 country in the regard, she too fails to meet the mark of
 acceptable accessibility, at least for non-Norwegian passengers.
+
+=================================================================
+
+All of my writing and software projects are available free of
+charge under CC-BY unless stated otherwise. I do not accept
+monetary donations, but if my work has brought you value I ask
+you to donate to a charitable cause or high-impact fund,
+organisation, business, institute, or individual driving moral
+progress.
+
+For more information about making a moral impact, see search for
+``giving what we can'', ``give well'', or ``effective altruism''.

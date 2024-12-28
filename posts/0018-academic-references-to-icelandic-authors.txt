@@ -83,3 +83,15 @@ There may be better ways of doing this in Latex. In fact, I can
 think of several ways to automate this process, but this is the
 most simple and portable way I found of doing things, and it
 importantly works with many versions of (bib)latex.
+
+=================================================================
+
+All of my writing and software projects are available free of
+charge under CC-BY unless stated otherwise. I do not accept
+monetary donations, but if my work has brought you value I ask
+you to donate to a charitable cause or high-impact fund,
+organisation, business, institute, or individual driving moral
+progress.
+
+For more information about making a moral impact, see search for
+``giving what we can'', ``give well'', or ``effective altruism''.

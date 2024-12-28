@@ -140,3 +140,15 @@ user18130814200115-2/plain.wester.digital.
 of doing a bad job. A shell is an incredibly complex piece of
 software, and the fact that the shell works even this well is
 nothing short of impressive.
+
+=================================================================
+
+All of my writing and software projects are available free of
+charge under CC-BY unless stated otherwise. I do not accept
+monetary donations, but if my work has brought you value I ask
+you to donate to a charitable cause or high-impact fund,
+organisation, business, institute, or individual driving moral
+progress.
+
+For more information about making a moral impact, see search for
+``giving what we can'', ``give well'', or ``effective altruism''.
