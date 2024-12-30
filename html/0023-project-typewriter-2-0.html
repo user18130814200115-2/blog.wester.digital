@@ -1,0 +1,106 @@
+<pre style="font-size: clamp(8px,2.49vw,25px); max-width:40em; margin: auto;">
+Project Typewriter 2.0
+Wed, 10 Jul 2024
+Technology, Programming
+=======================
+
+I have, for some time now, been interested in developing some
+sort of machine which is only capable of writing. Those who have
+read my the previous iterations of this blog may remember the
+typewriter which onto which I wired a USB output. The typewriter
+itself is also such a system, one which allows me to record my
+tough's onto paper without the possibility for further
+distractions. Today, I have developed a new system. It is by-far
+the most usable one, which I am proving by writing this very post
+on it (excuse the above-average amount of typos).
+
+Before getting into how exactly this system works, let me outline
+what it needs to be capable of doing. Any system on which I write
+must of course have an input method as well as some sort of
+feedback to the user. A screen, a piece of paper, potentially
+even sound. Secondly, the system must be able to store the
+written files in some digital manner. Lastly, I want to keep the
+system as minimal as possible, preferably being able to run it
+off a battery ban. It goes without saying that the system also
+needs to be accurate and fast enough to keep up with my
+(admittedly modest) typing speed.
+
+Having outlined the requirements, let us get in to the latest
+addition to my typing repertoire. This post is currently being
+written on a raspberry pi 400 with a 2*16 LCD character display
+attached. The raspberry pi 400, for those who do not know, is a
+small fanless computer built entirely inside of a keyboard. I
+will not go over all the specifications regarding the raspberry
+pi, but what is important to note is how you can use the device
+to driver various electronics The pi has access to 40 GPIO pins
+which can be connected to motors, sensors, lights, etcetera,
+which can then be controlled by software.
+
+In this case, the object connected to the pi is an LCD character
+display, which is capable of displaying a total of 30 characters
+in beautiful black-on-green text. The display is driven by a
+small python script which is indeed so simple, that calling it a
+text-editor probably counts as a direct insult for anyone who has
+ever actually worked on one. The script is divided into two parts
+which operate independently of one another. This asynchronous
+nature of the script is perhaps its most complicated feature,
+which says a lot about how minimalist its feature set is. The
+first part simple listens for key presses and stores the keys in
+memory. If the backspace is pressed, the latest character is
+removed from memory. When the return key is pressed, the current
+line is saved to a file, at which point the program will proceed
+to forget about it.
+
+The second part of the program updates the display. The display
+is rather slow and the driver will by-default wait for the
+display to finish drawing before continuing with the script. This
+is exactly why this part must be handled separately from the key
+recording. If these were handled on the same thread, then
+keystones would not be registered while the display was updating.
+The display code therefore simply looks at the current working
+string, formats it to fit on the 2*16 display, and sends it off
+to the drawn.
+
+That is really the extent of the editor. I added in a slight
+quality-of-life addition in the ability to exit the program by
+simply writing EXIT on an empty line. After doing so, a new file
+will be created (its name determined by the date and time), and
+the user's input will now be written onto that file instead.
+
+Obviously, these files must be taken off the internal SD card of
+the pi and put onto an actual computer for editing and
+publishing. Alternatively, you can attach a full monitor to the
+pi itself and do all the work from there. It is after all a fully
+functioning computer running Linux. This current iteration of my
+``typewriter project'' will probably be the host of a number of
+other blog posts. Writing on it gives a fun atmosphere, and the
+entire setup is light, power efficient, and even usable in bright
+daylight (unlike laptops or tablets). Unlike the actual
+typewriter which I gave a usb port; this version actually
+registers keystrokes consistently, is carry able with without a
+briefcase, requires neither ink nor paper, and is not loud enough
+to keep everybody in a 100 meter radius awake. I will miss the
+typewriter somewhat, though with the improvements OCR is making
+these days, I suppose I could just use it without the USB port.
+
+Code as always is available on my GitHub [1], though keep in mind
+that this is largely untested, unoptimized, and uncommented code.
+If you have interest in building a system like this yourself
+though, feel free to send me an email at blog@wester.digital.
+
+-----------------------------------------------------------------
+
+1: https://github.com/user18130814200115-2/LineWriter
+
+=================================================================
+
+All of my writing and software projects are available free of
+charge under CC-BY unless stated otherwise. I do not accept
+monetary donations, but if my work has brought you value I ask
+you to donate to a charitable cause or high-impact fund,
+organisation, business, institute, or individual driving moral
+progress.
+
+For more information about making a moral impact, see search for
+``giving what we can'', ``give well'', or ``effective altruism''.
+</pre>

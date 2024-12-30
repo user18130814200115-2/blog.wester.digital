@@ -85,9 +85,13 @@ for file in sorted(os.listdir("posts"), reverse=True):
             location = post_content[3][:-1]
         elif file[-3:] == 'txt':
             item_type = 0
-            location = 'posts/' + file
+            location = 'html/' + file[:-3] + 'html'
             for line in post:
                 post_content.append(line)
+            with open(location, 'w+') as html_file:
+                html_file.write(html_header + '\n')
+                html_file.write(''.join(post_content))
+                html_file.write(html_footer)
         else:
             print('Unknown file type for ' + file)
             

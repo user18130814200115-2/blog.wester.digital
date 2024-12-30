@@ -1,0 +1,228 @@
+<pre style="font-size: clamp(8px,2.49vw,25px); max-width:40em; margin: auto;">
+Moving to NixOS
+Tue, 24 Dec 2024
+Highly technical, Linux, Opinion
+================
+
+Disclaimer
+----------
+
+This post will be rather more technical compared to what I
+normally write about. I will be using a lot of technical jargon
+specific to the Linux desktop space. If you are not familiar
+with this world, then I suggest you skip this post, there are
+more coming soon (tm).
+
+-----------------------------------------------------------------
+
+I recently migrated my (main and only) system from Alpine Linux
+to NixOS. In this post I will explain why I made the switch and
+why I consider Nix to be -- currently -- the best Linux
+distribution available.
+
+Nix is a project that has been on my radar of quite some time
+now. It is a system designed around the principles of
+reproducibility, build-isolation, and declarative design, while
+also boasting one of the largest and most up-to-date software
+repositories in the Linux world.
+
+Of course, there is a lot of hype around Nix, and this tends to
+be a dangerous thing. In fact, I switched away from Arch Linux a
+few years ago exactly because it was increasingly flooded with
+novice users drawn in by the hype who considered the forums
+their personal large-language-model[1]. Aside from the hype
+though, there were a number of aspects which seemed really
+attractive to me. Rollbacks, Software availability, and
+Reproducibility being the main ones. On their own, these were
+not enough to overcome the cost of switching, that is until I
+encountered some problems with my existing Alpine installation.
+
+Alpine
+------
+
+When I initially switched from Arch to Alpine, I was very
+pleased for various reasons. The Alpine Package Keeper (apk) is
+-- to this day -- the most pleasant, fast, and reliable package
+manager I have used, Alpine's bi-yearly stable releases allowed
+me to have a more stable system, and the installer that came
+with my flavour of Alpine (PostmarketOS) allowed me to recover
+from catastrophic breakages faster than with Arch.
+
+Out of these benefits, stability and recoverability were the
+most important ones. These values are important for two main
+reasons.  Firstly, I only have one laptop at my disposal, and it
+is an arm laptop at that. If my OS breaks in some catastrophic
+manner, I will need to borrow someone else's laptop, take out
+the EMMC storage, and re-flash the operating system. A process
+that could take several days if none of my friends' laptops are
+available. Faster installations (that can be done from windows
+or mac) massively increase the chances that I will be able to
+recover my system in a reasonable amount of time. Secondly, I do
+not generally have a lot of time to tinker with my system
+outside of holidays. For this reason, I have gotten in the
+habit of only running updates every half year or so. If I would
+do this on Arch, everything would rather quickly break, and I
+would likely not be able to install anything in-between because
+there would be a dependency mismatch.
+
+In other words: Alpine stable is perfect for me. There is one
+problem however: I can't use it. `Can't' is a big word of
+course, and I must admit that I could theoretically live with a
+stable alpine release. But as it stands, I use a lot of software
+from Alpine's `testing' repository, which requires one to be on
+Alpine Linux `edge', the rolling-release side of Alpine. In
+other words, almost the entire previous paragraph can be thrown
+out. I will say that Alpine's apk handles infrequent updates
+better than Arch's pacman, but it still is not ideal that I need
+to be `edge' at all.. 
+
+This leads us to today: the start of the winter holidays. I
+tried running an update and it did not go well. Firstly, apk
+updates itself, so far so good. Secondly it tried to instal
+`mesa-asahi' for some reason. I have still not figured out which
+program introduced this new dependency. For those who do not
+know `mesa-asahi' is the graphics driver for Apple's arm-based
+macs which recently landed in alpine-testing. I do not have an
+arm-based mac, and so I don't know why this should have been
+installed. The reasons are however meaningless because
+`mesa-asahi' introduced a conflict with `mesa' generally (the
+graphics drivers I actually need) because the former was already
+on version 24.3 while the rest was still on 24.2.
+
+I tried running `apk fix' which is generally a good idea when
+you encounter a conflict with apk. This command (for some
+reason) updated `qt6' and nothing else. This meant that any app
+using qt6, like my web browser, document viewer, file manager,
+music player, video player, tormenting client, and others, would
+not work until they-too were updated.
+
+Since I didn't think I needed mesa-asahi in the first place (I
+never installed it up to that point, and I didn't see why I
+should start now), I decided to simply tell apk to exclude the
+package and update as usual. This seemed to have... weird
+effects. Firstly, none of my graphical programs were working
+anymore. GTK applications gave some sort or error which I cannot
+at the moment recall while QT applications just segfaulted -- a
+great start. Secondly, the system was incredibly slow: both in
+being sluggish to use and taking three times longer to boot than
+usual.
+
+Now -- clearly -- I messed something up by telling apk not to
+include mesa-asahi in the update. Indeed these problems may be
+attributable to missing graphics drivers -- with the system
+falling back to software rendering. However, the dependency
+introduction and version-mismatch were both out of my control,
+and the fact that `apk fix' updated QT6 and broke all my
+graphical applications meant that I couldn't just wait for the
+version conflict to be resolved[2].
+
+I though for some time about what to do -- re-installing
+Alpine-edge might work, or I could try Alpine-stable and make-do
+without half of my software -- and ultimately decided that I
+could not stay on Alpine due to the simultaneous need to be on
+`edge' while also needing a rock-solid system. Which brings us
+to Nix.
+
+NixOS
+-----
+
+I managed to download the NixOS installer ISO with `curl' and
+install it to a borrowed USB-stick using `dd' while still on my
+broken Alpine install. According to the wiki, I should just be
+able to use the graphical installer on my system. Easy peasy.
+
+This was not the case. The graphical installer does not have a
+menu to select the bootloader, and nix's default loader `grub'
+does not work well on arm based systems. Luckily the wiki-page
+for installing NixOS on arm single-board-computers had the
+correct instructions for a manual install, and a few minutes
+later I had a fresh install of NixOS.
+
+My initial impressions of Nix were rather positive. It was
+remarkably easy to learn, and there were a lot of resources
+available, notably the wiki and the forums. At first I had some
+trouble to get things working properly. Every time I ran an
+update, the updater itself would be broken on the new
+install[3]. Everytime though, I could just roll-back to the
+previous version and try again[4].
+
+I spent some time getting my usual configuration set up using
+nix and noticed just how helpful the nix-rebuild command was.
+For instance, when I tried to install flatpak, nix informed me
+that for flatpak to be functional, I needed to enable the
+xdg-desktop-portal service. After doing this, it told me that I
+didn't have an actual portal configured and/or installed. For
+context. If you do this on Arch or Alpine, you are pretty much
+left to your own devices in figuring out how to get these
+working, especially if you are not using a pre-configured
+desktop environment.
+
+A second immediately noticeable difference was the sheer size of
+the nix repositories. Every piece of software which I use, with
+the exception of one[5], was in the nix repositories, and I use
+a lot of niche and obscure software. The only somewhat strange
+thing I noticed is that the font which I like to use for my
+desktop: droid, was not in the stable repository, but only the
+unstable one[6]. This didn't matter though as nix allows me to
+add just this one package from the unstable repository while
+keeping my others on version 24.11.
+
+Nix handily beats Alpine in terms of software availability. I
+think this is in large-part to to the fact that alpine requries
+more porting work due to its use of musl-libc and openrc, rather
+than the more standard glibc and systemd Nix also beats Arch if
+you look only at the main repositories. The arch user repository
+still has an edge over nix in some cases, but this is not so
+much as repository as much as it is a collection of build scripts
+which -- in my experience -- work about as often as they do not.
+
+Lastly is recoverability. I already mentioned nix's rollback
+feature, but even if my laptop dies in its entirety, if the
+drive gets corrupted, or if I want to move to a different
+system, I will be able to get back on track in no time
+whatsoever. This is because an entire NixOS install is
+essentially defined as a configuration file. I have this
+configuration backed up in a public Github repository[7] and can
+therefore recover my system in minutes, rather than hours or
+days.
+
+All in all I am loving nix so far, and I will probably keep
+using it for quite some time.
+
+-----------------------------------------------------------------
+[1]: As a quick aside, I think the classic Arch-user-forum
+     response `RTFM' (Read the F Manual), is harmful to the
+     community as a whole, though I cannot deny that most of the
+     questions raised by new uses are described extensively on
+     the excellent wiki pages.
+[2]: As of writing, the mesa package has still not been updated
+     and the version conflict persists. It has been about a
+     week.
+[3]: This is 100% a case of user-error, and not a problem with
+     Nix or NixOS.
+[4]: I recall when I first installed Arch constantly messing
+     things up and re-installing from scratch. Even on Alpine I
+     once managed to remove any means of connecting to wifi and
+     needing to re-install.
+[5]: I can't even blame nix for this. The program in question is
+     a niche add-on to a niche program which has not been updated
+     in over a year. The only reason this program is in the
+     Alpine repositories is because I added it there.
+[6]: I don't know exactly what it means for a typeface
+     to be `unstable', but I believe it has something to do with
+     the fact that droid is designed for small-screen-interfaces which
+     are currently under heavy development.
+[7]: https://github.com/user18130814200115-2/riverbed
+
+=================================================================
+
+All of my writing and software projects are available free of
+charge under CC-BY unless stated otherwise. I do not accept
+monetary donations, but if my work has brought you value I ask
+you to donate to a charitable cause or high-impact fund,
+organisation, business, institute, or individual driving moral
+progress.
+
+For more information about making a moral impact, see search for
+``giving what we can'', ``give well'', or ``effective altruism''.
+</pre>
