@@ -24,4 +24,6 @@ jobs:
           git config --local user.name "GitHub Actions"
           git add index.html all.html feed.xml gophermap
           git commit -m "regenerate indexes" || true
+          git add html/*
+          git commit -m "regenerate html pages" || true
           git push
