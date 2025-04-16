@@ -1,0 +1,239 @@
+Insights in living without a smartphone
+Wed, 16 Apr 2025
+Technology, Lifestyle
+=======================================
+
+I have not used a smartphone for about 5 years on-and-off
+(discounting of course the years as a child where I didn't need
+to worry about silly things like this). It started in the summer
+of 2019 when by best friend gifted me his old Nokia 8110 4G
+(more on this later). Since then, I only had a smartphone for
+about a year. This device burnt through its charging circuitry a
+month or-so ago, so I am back to the dumb-life, though now with
+more insight into how to do things.
+
+In this post, I will be sharing the insights I have accumulated
+over the years. Just as a warning, the advice provided in this
+post might come across as ultimately unsatisfying. While it is
+definitely possible to live off of the information-grid, that is
+not the type of life I can live currently. Therefore, a lot of
+my insights revolve around using alternative but highly similar
+solutions to having a smartphone. The main difference being that
+you don't or can't bring these devices around in your pocket.
+
+With they being said, let me start by covering briefly the
+things which smartphones provide to us. Obviously, this list is
+not exhaustive, instead only covering those things which I
+personally find valuable and things which are outside of my
+control.
+
+What do smartphones give us?
+----------------------------
+
+1. The valuable
+	a. Photography
+	b. Navigation
+	c. Phone calls
+	d. Music and podcasts
+	e. Alarms
+2. The enforced
+	a. Multi-factor-authentication
+		i. TOTP codes
+		ii. Specific apps (primarily banking and government ID)
+	b. Certain communication platforms
+		i. Notably Whatsapp
+	c. Bus/Plane/Train/Cinema Tickets/Identification
+
+How do we replace these services?
+---------------------------------
+
+Now we come to the interesting part: how do we replace all these
+services provided to us by smartphones. For this section, I will
+keep the same divide as listed above, as interesting patterns
+emerge when we do so.
+
+The valuable
+============
+
+Generally, for items in the `valuable' category, we have a
+two main options: specialized technology or feature phones.
+
+Specialized technology speaks for itself. Get yourself a camera,
+map or GPS, dumb-phone, disc-or-walk-man or mp3 player, and an
+alarm clock.  Obviously, this is a lot more to carry around
+which will force you to be more concious with what you bring
+with you. Furthermore -- while I find this highly upsetting
+when it comes to the state of society -- you can get all of
+these items (new or second-hand) for less than the price of a
+new smartphone.
+
+The other option (and the one I have gone with) is the feature
+phone. Feature phones are a class of devices reminiscent of the
+dumb-phones of old though brought into the modern world. They
+typically allow you to connect to 4G networks, install apps, and
+use the internet. At the same time, they are typically very
+low-powered devices with traditional button-navigation. Some of
+them run Android (which allows you to install all your usual
+apps, though with the processing and navigation limitations
+mentioned), Android-go  (Android with a reduced and simplified
+library of apps), or KaiOS (A operating system based on web
+technologies).
+
+Each of these have their up-and-downsides. The android devices
+are by far the most capable, though in my opinion you might as
+well get an old second-hand smartphone at that point. Many of
+them even have touchscreens making them just overpriced
+smartphones with a built-in keyboard. The android-go devices
+seem more in line with what I would want, though they are
+typically not optimized for button-navigation and I have never
+actually used one. That brings us to KaiOS. KaiOS is the
+operating system which runs on the phone which I have used these
+past 5 years (the aforementioned nokia 8110) and exists at the
+nigh-perfect intersection of usable and limited. I should point
+out at this point that KaiOS is more-or-less a dead project,
+though that doesn't mean that it is not still perfectly usable,
+nor that there are not still exciting (though small)
+developments made by the community.
+
+My Nokia runs KaiOS. The camera is not very capable, but more
+than sufficient for capturing memories. It runs a stripped-down
+version of the google-maps website, sufficient for finding your
+way when lost using GPS and 4G. Obviously it is perfectly
+capable of phone calls and texts (even with two sim slots --
+revolutionary, I know --). The built in music player app is
+sufficient for my needs, though it does not allow you to make
+playlists (third party offerings in the KaiStore do offer this
+functionality) and there are plenty of podcast apps available.
+
+In other words, my Nokia covers all the bases of what I find
+valuable in a phone. Problem solved right? Well actually, the
+`valuable' list is the easy part. Now for the elements outside
+of my control.
+
+The enforced
+============
+
+The enforced section of services is both more difficult and less
+satisfying. Let me just rip of the bandage right away by dealing
+with the least satisfying ones: Authentication, Identification,
+and Communication.
+
+Many services in this area simply REQUIRE an app on either
+android or IOS. Banking applications, Government ID, Healthcare,
+and Whatsapp all require apps to some extent. Banks occasionally
+allow you request a dedicated code-device, though more the
+more-modern e-banks usually don't offer such services.
+Governments and Health-insurance-providers (at least the ones
+which are relevant to me) require apps to authenticate to online
+environments. Lastly is Whatsapp, for those not from
+mainland-Europe it might seem strange that this app is in the
+`enforced' section, but here governments, public institutions,
+customer-service-lines, and the public at-large all use
+whatsapp. And since these services have still not been forced to
+allow for interoperability with other services, I am stuck there
+for now.
+
+Now to the (rather unsatisfying) solutions to these problems.
+Over the years I have found three options:
+	1. Run an android container on your laptop or PC
+	2. Get a tablet running android or IOS
+	3. Get a smartphone that you leave in a drawer somewhere at
+	   home
+In other words, you will be stuck with these services (and
+Android or IOS) either way, though at least these are not
+services you will need to have on you at all times.
+Whatsapp is perhaps an exception to this, though this depends on
+your lifestyle.
+
+Whatsapp is furthermore an exception because it doesn't provide
+an IpadOS app for some reason. Therefore, if you want to go with
+the tablet-route, you cannot use and Ipad. Furthermore, while
+Whatsapp does offer a web-version, you will still need to login
+from Android or IOS. Personally, I run an android-emulator on my
+laptop (waydroid) where I authenticate my whatsapp-web and
+hardly ever look at it again. Do keep in mind that you need to
+add contacts in your replacement device of choice as you cannot
+do this through Whatsapp-web. Other communication platforms like
+telegram are much better in this regard as they just have a
+standalone web-app, though for the reasons mentioned above, I
+cannot use these.
+
+When it come to non-app-specific two-factor authentication, the
+story is a lot more encouraging. Firstly, the feature phones I
+mentioned before all have apps which allow for receiving TOTP
+codes. Furthermore, such apps also exist for mac, linux, and
+widows. Allowing you to simply authenticate with your laptop or
+pc instead. Of course, if you are already getting a tablet for
+the services above, then you can also use it to authenticate,
+though at that point you are committing to carrying around your
+tablet to most places where you might need to authenticate (such
+as university, work, or public institutions).
+
+Lastly is tickets and identification. Once again, you can carry
+around a tablet whenever you need a ticket for something, though
+-- especially if you use public transport a lot like I do --
+this is not always feasible. Luckily, all services I have
+encountered thus far still allow you to print a physical card
+(for identification) or just print your ticket on paper (for
+entry tickets and such). This does not necessarily mean that you
+need to buy a printer though. Many libraries and universities
+will allow you to print for a small fee. Some countries
+(especially in southern Europe) also have many copy-shops spread
+throughout their cities. The only difficulty in using the later
+is somehow transferring your documents to the shop. This is
+usually done on-the-spot though email, which is obviously not
+accessible without a smartphone or similar device, though
+luckily many places also accept USB sticks, and you can always
+send your email ahead of time with an explanation that you will
+come by soon.
+
+Final remarks
+-------------
+
+The copy-shop example also leads me to one final point, that
+being the ability to rely on friends and family for help. At the
+end of the day, many of ditch smartphones to feel more connected
+to others, and having a friend help you out with their printer
+or mobile-internet-connection at the copy-shop is one such way
+of connecting. The same goes for navigation. In a group, only
+one person needs to have a method of navigation on them. You can
+meet-up in-person instead of discussing things over text, or
+just inform your friends and family that they need to call you
+if they want to get a hold of you. 
+
+Obviously, this lifestyle (if you want to call it that) can be
+limiting, and it can feel especially discouraging when
+smartphones are forced upon you. I have written in the past
+about QR-codes and how their proliferation for restaurant menus,
+ordering, locker reservation, etcetera basically forces you into
+getting a smartphone (or a friend with one), and this can make
+be limiting. There is almost always a way around this though
+(talk with a waitress instead, see if someone around can get you
+a locker in exchange for cash, etcetera), though there is not
+one generalized solution (Yes, the nokia 8110 can scan QR codes
+and use the websites, but I will always try to find a different
+solution first.).
+
+Ultimately, I have found not having a smartphone quite fun, and
+ultimately more liberating than limiting. If you have never
+tried it however, you don't and can't know what you are missing
+(and I can't really describe it either other than a feeling of
+freedom). I would love to say ``Everyone! Just give it a try'',
+but there will be a large adjustment period and even a fair
+amount of money spent in some cases.
+
+Therefore, my final point of advice is this: If you want to try
+living without a smartphone, don't bring one the next time you
+go on holidays -- provided you are traveling with someone who
+does have a smartphone. In this way, you will always have the
+safety of falling back on your partner's device, while
+simultaneously forcing yourself to keep the experiment up until
+the end of your trip.
+
+=================================================================
+All of my writing and software projects are available free of
+charge under CC-BY unless stated otherwise. I do not accept
+monetary donations, but if my work has brought you value I ask
+you to donate to a charitable cause or high-impact fund,
+organisation, business, institute, or individual driving moral
+progress.
