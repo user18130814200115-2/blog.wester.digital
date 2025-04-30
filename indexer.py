@@ -38,7 +38,7 @@ all_link = 'All posts'
 posts_pre = 'Recent posts:\n'
 
 # Internally used set strings
-html_header = '<pre style=\"font-size: clamp(8px,2.49vw,25px); max-width:40em; margin: auto;\">'
+html_header = '<pre style=\"font-size: clamp(8px,2.49vw,25px); max-width:40em; margin: auto; margin-bottom: 50vh;\">'
 html_footer = '</pre>'
 rss_header = '<?xml version="1.0" encoding="UTF-8" ?><rss version="2.0"><channel><title>Wester Digital plaintext blog</title><link>https://blog.wester.digital</link><description>Random blogposts delivered in plaintext</description>'
 rss_footer = '</channel></rss>'
